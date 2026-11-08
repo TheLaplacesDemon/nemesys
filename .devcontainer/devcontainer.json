@@ -1,0 +1,10 @@
+{
+  "name": "Nemere",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": "..",
+    "tag": "nemere:latest"
+  },
+  "workspaceMount": "type=bind,source=${localWorkspaceFolder},target=/nemere",
+  "workspaceFolder": "/nemere"
+}
